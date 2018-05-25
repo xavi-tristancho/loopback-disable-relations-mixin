@@ -12,7 +12,7 @@ First you must install this package through npm
 $ npm install loopback-disable-relations-mixin --save
 ```
 
-Then you have to configure the file `model-config.json` so it loads the mixin.
+Then you have to configure the file `model-config.json` to load the mixin.
 
 ```
 "mixins": [
@@ -37,7 +37,24 @@ And finally you can configure your model so it hides the endopints.
 }
 ```
 
-The available endpoint names available out of the box for hiding are:
+If you want some of them to show:
+
+```
+{
+  "name": "ApplicationUser",
+  "base": "User",
+  "mixins": {
+    "DisableRelations" : {
+      "accessTokens" : {
+        "*": false,
+        "__get__": true
+      }
+    }
+  },
+}
+```
+
+The available endpoint names available out of the box for showing or hiding are:
 
 ```
 "__get__",
