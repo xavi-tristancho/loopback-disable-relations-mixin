@@ -1,0 +1,25 @@
+{
+  "name": "loopback-disable-relations-mixin",
+  "version": "1.0.0",
+  "description": "A mixin to declaratively disable related models endpoints ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xavitb3/loopback-disable-relations-mixin.git"
+  },
+  "keywords": [
+    "loopback"
+  ],
+  "author": "Xavi Tristancho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xavitb3/loopback-disable-relations-mixin/issues"
+  },
+  "homepage": "https://github.com/xavitb3/loopback-disable-relations-mixin#readme",
+  "dependencies": {
+    "jest": "^23.0.0"
+  }
+}
