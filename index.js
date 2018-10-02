@@ -1,5 +1,8 @@
 const DisableRelations = require("./disable-relations");
 
-export default app => {
-  app.loopback.modelBuilder.mixins.define("DisableRelations", DisableRelations());
+module.exports = app => {
+  app.loopback.modelBuilder.mixins.define(
+    "DisableRelations",
+    DisableRelations()
+  );
 };
