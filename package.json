@@ -1,6 +1,6 @@
 {
   "name": "loopback-disable-relations-mixin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A mixin to declaratively disable related models endpoints ",
   "main": "index.js",
   "scripts": {
